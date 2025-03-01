@@ -1,0 +1,67 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #0000ee;
+  --navbar-color: #494cff;
+  --light-grey: rgb(193, 193, 193) 0;
+  --dd-color: black;
+  --dd-bg-color: white;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  transition: background-color 0.4s;
+}
+.profile-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: end;
+  margin-top: 150px;
+  gap: 50px;
+}
+.title-text {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  max-width: min-content;
+  color: var(--text-color);
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.name {
+  font: 700 3.5em "Roboto", sans-serif;
+  min-width: fit-content;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #782087, #00027d);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 1s infinite alternate ease-in-out;
+}
+.summary-heading {
+  font: 700 1.2em "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+.summary {
+  font-size: 12px;
+  text-align: justify;
+}
+.big-box {
+  height: 100vh;
+}
