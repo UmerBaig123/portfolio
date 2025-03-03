@@ -8,6 +8,11 @@ const switchMode = (e) => {
     document.documentElement.style.setProperty("--navbar-color", "#441f94");
     document.documentElement.style.setProperty("--dd-color", "#ffffff");
     document.documentElement.style.setProperty("--dd-bg-color", "#242424");
+    document.documentElement.style.setProperty("--table-bg", "#242424");
+    document.documentElement.style.setProperty(
+      "--card-bg",
+      "rgb(125, 36, 141)"
+    );
   } else {
     lightMode = true;
     document.documentElement.style.setProperty("--bg-color", "#ffffff");
@@ -16,6 +21,8 @@ const switchMode = (e) => {
     document.documentElement.style.setProperty("--navbar-color", "#494cff");
     document.documentElement.style.setProperty("--dd-color", "#000000");
     document.documentElement.style.setProperty("--dd-bg-color", "#ffffff");
+    document.documentElement.style.setProperty("--table-bg", "#ffffff");
+    document.documentElement.style.setProperty("--card-bg", "#ffffff");
   }
   get_github_repos();
 };
