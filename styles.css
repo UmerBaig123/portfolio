@@ -119,6 +119,23 @@ th {
   color: white !important;
   background-color: var(--navbar-color) !important;
 }
+.social-links {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  margin-top: 5px;
+  gap: 30px;
+}
+.social-links img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.social-links img:hover {
+  filter: grayscale(0%);
+}
 .container {
   position: relative;
   max-width: 500px;
