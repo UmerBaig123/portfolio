@@ -3,6 +3,7 @@
   --text-color: #000000;
   --link-color: #0000ee;
   --navbar-color: #494cff;
+  --card-bg: #ffffff;
   --light-grey: rgb(193, 193, 193) 0;
   --dd-color: black;
   --dd-bg-color: white;
@@ -51,7 +52,7 @@ body {
   font: 700 3.5em "Roboto", sans-serif;
   min-width: fit-content;
   white-space: nowrap;
-  margin-bottom: 10px;
+  /* margin-bottom: ; */
   background: linear-gradient(90deg, #782087, #00027d);
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -135,6 +136,36 @@ th {
 }
 .social-links img:hover {
   filter: grayscale(0%);
+}
+.card-body {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  box-shadow: 0 0px 18px rgba(0, 0, 0, 0.425);
+  border-radius: 5px !important;
+  user-select: none;
+}
+.tech-stack {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.tech-stack img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.tech-stack img:hover {
+  animation: rotate 1s infinite linear;
 }
 .container {
   position: relative;
