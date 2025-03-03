@@ -6,6 +6,7 @@
   --light-grey: rgb(193, 193, 193) 0;
   --dd-color: black;
   --dd-bg-color: white;
+  --table-bg: #ffffff;
   --pg-bar-empty: #f3f3f3;
   --pg-bar-filled: #494cff;
 }
@@ -103,6 +104,20 @@ body {
 }
 .show_more:hover {
   opacity: 1;
+}
+.education-table {
+  margin: 0 auto;
+}
+.education-table td,
+th {
+  border: 1px solid var(--text-color) !important;
+  color: var(--text-color) !important;
+  background-color: var(--table-bg) !important;
+}
+.education-table th {
+  font-weight: 900 !important;
+  color: white !important;
+  background-color: var(--navbar-color) !important;
 }
 .container {
   position: relative;
