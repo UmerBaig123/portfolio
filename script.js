@@ -1,5 +1,6 @@
 var lightMode = true;
 const switchMode = (e) => {
+  const switch_circle = document.getElementById("switch-circle");
   if (lightMode) {
     lightMode = false;
     document.documentElement.style.setProperty("--bg-color", "#141414");
@@ -9,10 +10,13 @@ const switchMode = (e) => {
     document.documentElement.style.setProperty("--dd-color", "#ffffff");
     document.documentElement.style.setProperty("--dd-bg-color", "#242424");
     document.documentElement.style.setProperty("--table-bg", "#242424");
+    document.documentElement.style.setProperty("--switch-bg", "#666666");
+    document.documentElement.style.setProperty("--switch-circle-bg", "#F0F0F0");
     document.documentElement.style.setProperty(
       "--card-bg",
       "rgb(125, 36, 141)"
     );
+    switch_circle.style.left = "calc(100% - 34px)";
   } else {
     lightMode = true;
     document.documentElement.style.setProperty("--bg-color", "#ffffff");
@@ -23,6 +27,15 @@ const switchMode = (e) => {
     document.documentElement.style.setProperty("--dd-bg-color", "#ffffff");
     document.documentElement.style.setProperty("--table-bg", "#ffffff");
     document.documentElement.style.setProperty("--card-bg", "#ffffff");
+    document.documentElement.style.setProperty(
+      "--switch-bg",
+      "rgb(144, 216, 234)"
+    );
+    document.documentElement.style.setProperty(
+      "--switch-circle-bg",
+      "rgb(255, 186, 38)"
+    );
+    switch_circle.style.left = "2px";
   }
   get_github_repos();
 };

@@ -23,6 +23,37 @@
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
         </div>
+         <div class="ihatebootstrap">
+          <div class="dropdown navdd">
+            <button
+              class="btn custom-dropdown dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="display: flex; align-items: center; gap: 5px;background-color: #00000000 !important;color:var(--text-color) !important;border: 0px !important;"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg>
+</svg>
+              
+            </button>
+            <ul
+              class="dropdown-menu"
+              style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            >
+            <li>
+          <a href="#home" class="dropdown-item">Home</a></li>
+            <li>
+          <a href="#repositories" class="dropdown-item">Repositories</a></li>
+            <li>
+          <a href="#skills" class="dropdown-item">Skills</a></li>
+            <li>
+          <a href="#experience" class="dropdown-item">Experience</a></li>
+            <li>
+          <a href="#education" class="dropdown-item">Education</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="ihatebootstrap">
           <div class="dropdown">
             <button
@@ -61,69 +92,8 @@
         </div>
       </div>
       <label class="switch">
-        <input id="mode_switch" onclick="switchMode(this)" type="checkbox" />
-        <div class="slider round">
-          <div class="sun-moon">
-            <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-
-            <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-            <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="50"></circle>
-            </svg>
-          </div>
-          <div class="stars">
-            <svg id="star-1" class="star" viewBox="0 0 20 20">
-              <path
-                d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-              ></path>
-            </svg>
-            <svg id="star-2" class="star" viewBox="0 0 20 20">
-              <path
-                d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-              ></path>
-            </svg>
-            <svg id="star-3" class="star" viewBox="0 0 20 20">
-              <path
-                d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-              ></path>
-            </svg>
-            <svg id="star-4" class="star" viewBox="0 0 20 20">
-              <path
-                d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-              ></path>
-            </svg>
-          </div>
+        <div class="switch-container" onclick="switchMode(this)">
+          <div class="switch-circle" id="switch-circle"></div>
         </div>
       </label>
     </div>
@@ -136,14 +106,14 @@
       <div class="title-text">
         <div class="name">Muhammad Umer Baig</div>
         <div class="social-links">
-          <a href="www.linkedin.com/in/muhammad-umer-baig-318144288">
+          <a href="https://www.linkedin.com/in/muhammad-umer-baig-318144288" target="_blank">
           <img
             src="https://img.icons8.com/fluency/48/linkedin.png"
             alt="linkedin"
           /></a><a href="mailto:muhammadumerbaig9922@gmail.com"><img
             src="https://img.icons8.com/color/48/gmail-new.png"
             alt="gmail-new"
-          /></a><a href="https://github.com/UmerBaig123">
+          /></a><a href="https://github.com/UmerBaig123" target="_blank">
           <img src="https://img.icons8.com/color/48/git.png" alt="git" />
         </div></a>
         <div class="summary-heading">A bit about me</div>
@@ -216,8 +186,8 @@
         </div>
     </div>
     <div class="section-heading" id="experience">Experience</div>
-    <div class="ihatebootstrap" style="margin-left: 40px !important;margin-top: 20px;display: flex !important;align-items: start !important;flex-wrap: wrap !important;flex-direction: row !important;gap: 30px;">
-      <div class="card" style="width: 18rem;"> 
+    <div class="ihatebootstrap" style="margin-left: 40px !important;margin-top: 40px;display: flex !important;align-items: start !important;flex-wrap: wrap !important;flex-direction: row !important;gap: 30px;justify-content: space-around;">
+      <div class="card" style="width: 28rem;"> 
   <div class="card-body"  >
     <h5 class="card-title" style="font-weight: 800 !important;font-size: 20px !important;margin-bottom: 5px;">React Native/Django developer</h5>
     <p class="card-text" style="font-size: 12px !important;">Worked a part time job as a react native and django full stack developers, my work was to rework and refactor old deprecated code bases and add functionalities to projects</p>
@@ -226,7 +196,7 @@
       <img  src="https://img.icons8.com/external-those-icons-flat-those-icons/24/external-MySQL-programming-and-development-those-icons-flat-those-icons.png" alt="external-MySQL-programming-and-development-those-icons-flat-those-icons"/>
       <img src="https://img.icons8.com/color/48/react-native.png" alt="react-native"/></div>
   </div>
-</div><div class="card" style="width: 18rem;"> 
+</div><div class="card" style="width:  28rem;"> 
   <div class="card-body"  >
     <h5 class="card-title" style="font-weight: 800 !important;font-size: 20px !important;margin-bottom: 5px;">AI/ML Engineer</h5>
     <p class="card-text" style="font-size: 12px !important;">
