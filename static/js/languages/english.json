@@ -1,0 +1,13 @@
+{
+  "home": "Home",
+  "repositories": "Repositories",
+  "skills": "Skills",
+  "experience": "Experience",
+  "education": "Education",
+  "select_language": "Select Language",
+  "summary": "Versatile software engineer with expertise in MERN stack, React Native, and Django, specializing in building scalable web and mobile applications. Passionate about AI/ML development, with hands-on experience in deep learning, predictive modeling, and data-driven decision-making. Skilled in integrating machine learning solutions into real-world applications, optimizing performance, and creating user-friendly dashboards. Proficient in Docker, cloud deployment, and data pipelines to ensure seamless automation and scalability. Adept at handling large datasets, implementing robust backend systems, and crafting intuitive UI/UX experiences. Always eager to explore emerging technologies and push the boundaries of innovation.",
+  "exp1_title": "React Native/Django developer",
+  "exp1_desc": "Worked a part time job as a react native and django full stack developers, my work was to rework and refactor old deprecated code bases and add functionalities to projects",
+  "exp2_title": "AI/ML Engineer",
+  "exp2_desc": " Worked on a project to predict the stock prices of a company using machine learning and deep learning models, the project was a part of my university course"
+}
