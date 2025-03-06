@@ -19,12 +19,17 @@ body {
   transition: background-color 0.4s;
 }
 .profile-image {
+  cursor: pointer;
   width: 25%;
   aspect-ratio: 1;
   box-shadow: 0 0 100px 5px rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   object-fit: cover;
   display: block;
+  transition: 0.3s ease;
+}
+.profile-image:hover {
+  transform: scale(1.1);
 }
 .about-container {
   display: flex;
@@ -171,7 +176,6 @@ th {
 }
 .container {
   position: relative;
-  max-width: 500px;
   width: 100%;
   margin: 0 15px;
   padding: 10px 20px;
